@@ -1,20 +1,18 @@
 import { StyleSheet } from "react-native";
+import colors from "../../global/styles/colors";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent:'center'
+    justifyContent:'center',
+    backgroundColor:colors.background,
+    paddingHorizontal:16,
   },
-    input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-  button:{
-    borderRadius:8,
-    borderColor:'#fefefefe',
-    backgroundColor:'#434343',
-    height: 40,
-  }
+    title:{
+    fontSize:24,
+    fontWeight:'bold',
+    marginBottom:24,
+    color:colors.text,
+    textAlign:'center'
+    }
 })
