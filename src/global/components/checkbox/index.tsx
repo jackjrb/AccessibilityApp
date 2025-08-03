@@ -1,18 +1,17 @@
 import { View, TouchableOpacity , Text } from 'react-native';
 import { styles } from './styles';
 
-interface ButtonProps {
+interface CheckboxProps {
   text: string;
 }
 
-const Button = ({text}:ButtonProps) => {
+const Checkbox = ({text}:CheckboxProps) => {
     return(
-        <View>
-          <TouchableOpacity style={styles.button}>
+        <View style={styles.container}>
+          <TouchableOpacity style={styles.button}/>
             <Text style={styles.textButton}>{text}</Text>
-          </TouchableOpacity>
         </View>
     )
 }
 
-export default Button
+export default Checkbox

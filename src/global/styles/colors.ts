@@ -1,7 +1,7 @@
 export default {
-    primary: '#5636D3',
+    primary: '#FF3951',
 
-    secondary: '#FF872C',
+    secondary: '#000000',
     secondary_light: 'rgba(255,135,44, 0.3)',
 
     success:'#12A454',

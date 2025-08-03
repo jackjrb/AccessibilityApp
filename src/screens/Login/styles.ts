@@ -8,11 +8,17 @@ export const styles = StyleSheet.create({
     backgroundColor:colors.background,
     paddingHorizontal:16,
   },
-    title:{
+  title:{
     fontSize:24,
     fontWeight:'bold',
     marginBottom:24,
     color:colors.text,
     textAlign:'center'
-    }
+  },
+  image:{
+    width: '100%',
+    height: 200,
+    marginBottom: 24,
+    resizeMode: 'contain'
+  }
 })
