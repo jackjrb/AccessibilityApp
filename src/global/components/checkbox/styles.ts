@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     },
     button:{
         borderRadius:10,
-        borderColor:colors.text,
+        borderColor:colors.title,
         borderWidth:1,
         backgroundColor:colors.background,
         width:10,
@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
         alignItems:'center'
     },
     textButton:{
-        fontSize:12
+        fontSize:12,
+        color: colors.text,
     }
 })

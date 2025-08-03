@@ -12,7 +12,7 @@ const Login = () => {
           <Text style={styles.title}>Seja bem vindo de volta</Text>
           <Input placeholder='E-mail'/>
           <Input placeholder='Senha'/>
-          <Button text="Avancar" />
+          <Button text="Avançar" />
           <Checkbox text="Lembrar-me" />
         </View>
     )

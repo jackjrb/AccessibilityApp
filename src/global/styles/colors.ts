@@ -1,5 +1,5 @@
 export default {
-    primary: '#FF3951',
+    primary: '#FF7585',
 
     secondary: '#000000',
     secondary_light: 'rgba(255,135,44, 0.3)',
@@ -11,8 +11,8 @@ export default {
     attention_light: 'rgba(232,63,91, 0.5)',
         
     shape:'#FFFFFF',
-    title:'#363F5F',
-    text:'#969CB2',
+    title:'#585F7E',
+    text:'#939BC2',
     background:'#F0F2F5'
     
 }
