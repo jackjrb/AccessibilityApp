@@ -1,5 +1,7 @@
 import { Image, Text, View } from 'react-native';
+
 import { styles } from './styles';
+
 import Button from '../../global/components/button';
 import Input from '../../global/components/input';
 import Checkbox from '../../global/components/checkbox';

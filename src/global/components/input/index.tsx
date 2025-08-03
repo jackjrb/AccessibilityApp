@@ -1,6 +1,6 @@
 import { View, TextInput} from 'react-native';
-
 import { useState } from 'react';
+
 import { styles } from './styles';
 
 interface InputProps {
