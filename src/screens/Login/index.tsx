@@ -13,9 +13,9 @@ const Login = () => {
         <View style={styles.container}>
           <Image source={require('../../assets/login.png')} style={styles.image}/>
           <Text style={styles.title}>Seja bem vindo de volta</Text>
-          <Input placeholder='E-maillll'/>
+          <Input placeholder='E-mail'/>
           <Input placeholder='Senha' type='password'/>
-          <Button text="Avançarrr" />
+          <Button text="Avançar" />
           <Checkbox text="Lembrar-me" />
         </View>
     )

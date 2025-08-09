@@ -3,7 +3,8 @@ import { StyleSheet } from "react-native";
 import colors from "../../styles/colors";
 
 
-export const styles = StyleSheet.create({
+export const getStyles = (isChecked:boolean) =>
+  StyleSheet.create({
     container:{
         flexDirection: 'row',
         alignItems: 'center',
@@ -12,9 +13,9 @@ export const styles = StyleSheet.create({
     },
     button:{
         borderRadius:10,
-        borderColor:colors.title,
+        borderColor:isChecked ? colors.primary: colors.title,
         borderWidth:1,
-        backgroundColor:colors.background,
+        backgroundColor:isChecked ? colors.primary:colors.background,
         width:10,
         height: 10,
         justifyContent:'center',
