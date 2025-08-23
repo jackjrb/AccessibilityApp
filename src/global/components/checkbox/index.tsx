@@ -12,10 +12,10 @@ const Checkbox = ({text}:CheckboxProps) => {
     const styles = getStyles(isChecked);
 
     return(
-        <View style={styles.container}>
-          <TouchableOpacity style={styles.button} onPress={()=>{setIsChecked(!isChecked)}}/>
-            <Text style={styles.textButton}>{text}</Text>
-        </View>
+        <TouchableOpacity style={styles.container} onPress={()=>{setIsChecked(!isChecked)}}>
+          <View style={styles.button}/>
+          <Text style={styles.textButton}>{text}</Text>
+        </TouchableOpacity>
     )
 }
 

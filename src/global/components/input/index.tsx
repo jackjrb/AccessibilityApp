@@ -6,6 +6,7 @@ import { styles } from './styles';
 
 import Visibility from '../../../assets/Visibility.svg';
 import VisibilityOff from '../../../assets/VisibilityOff.svg';
+import colors from '../../styles/colors';
 
 
 export type InputProps = MaskInputProps & {
@@ -19,13 +20,13 @@ const Input = ({placeholder, type}:InputProps) => {
 
       const handleVisibilityToggle = useCallback(() => {
             return (
-                <TouchableOpacity onPress={() => setIsPasswordVisible(!isPasswordVisible)}>
+                <TouchableOpacity onPress={() => setIsPasswordVisible(!isPasswordVisible)} style={styles.button} accessibilityLabel={isPasswordVisible ? "Ocultar senha" : "Mostrar senha"} accessibilityRole="button" accessibilityHint="Alterna a visibilidade do campo de senha">
                     {isPasswordVisible ? (
                        
-                        <Visibility height={20} width={20}/>
+                        <Visibility height={25} width={25} color={colors.text}/>
                     ):(
                        
-                        <VisibilityOff height={20} width={20}/>
+                        <VisibilityOff height={25} width={25} color={colors.text}/>
                     )}
                 </TouchableOpacity>
             )
@@ -33,12 +34,10 @@ const Input = ({placeholder, type}:InputProps) => {
 
     return(
         <View style={styles.input}>
-            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'}/>
+            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1}}/>
             {type === 'password' ? (
-               <TouchableOpacity onPress={() => setIsPasswordVisible(!isPasswordVisible)}>
-                    {handleVisibilityToggle()}
-               </TouchableOpacity>
-            ):null}
+                handleVisibilityToggle()
+            ) : null}
         </View>
     )
 }

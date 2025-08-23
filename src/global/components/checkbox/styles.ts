@@ -9,20 +9,21 @@ export const getStyles = (isChecked:boolean) =>
         flexDirection: 'row',
         alignItems: 'center',
         gap: 12,
-        padding: 10,
+        paddingVertical: 20,
+        paddingHorizontal: 8
     },
     button:{
-        borderRadius:10,
-        borderColor:isChecked ? colors.primary: colors.title,
-        borderWidth:1,
+        borderRadius:5,
+        borderColor:isChecked ? colors.primary: colors.text,
         backgroundColor:isChecked ? colors.primary:colors.background,
-        width:10,
-        height: 10,
+        borderWidth:1,
+        width:18,
+        height: 18,
         justifyContent:'center',
         alignItems:'center'
     },
     textButton:{
-        fontSize:12,
+        fontSize:14,
         color: colors.text,
     }
 })

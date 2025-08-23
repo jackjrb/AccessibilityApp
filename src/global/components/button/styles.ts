@@ -13,6 +13,6 @@ export const styles = StyleSheet.create({
   },
   textButton:{
     fontSize:14,
-    color:colors.title,
+    color:colors.text,
   }
 })

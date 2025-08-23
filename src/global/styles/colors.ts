@@ -1,10 +1,9 @@
 export default {
-    primary: '#FF7585',
+    primary: '#FC8342',
 
-    secondary: '#000000',
         
-    title:'#585F7E',
-    text:'#939BC2',
+    text:'#1A1A1A',
+    title:'#606BA5',
     background:'#F0F2F5'
     
 }
