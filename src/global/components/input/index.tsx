@@ -11,10 +11,12 @@ import colors from '../../styles/colors';
 
 export type InputProps = MaskInputProps & {
     placeholder: string;
-  type?: string; 
+    type?: string; 
+    accessibilityLabel?: string;
+    accessibilityHint?: string;
 }
 
-const Input = ({placeholder, type}:InputProps) => {
+const Input = ({placeholder, type, accessibilityHint, accessibilityLabel}:InputProps) => {
       const [value, onChangeText] = useState('')
       const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
@@ -34,7 +36,7 @@ const Input = ({placeholder, type}:InputProps) => {
 
     return(
         <View style={styles.input}>
-            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1}}/>
+            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1}} accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint}/>
             {type === 'password' ? (
                 handleVisibilityToggle()
             ) : null}

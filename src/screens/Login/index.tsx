@@ -13,10 +13,10 @@ const Login = () => {
         <View style={styles.container}>
           <Image source={require('../../assets/login.png')} style={styles.image}/>
           <Text style={styles.title}>Seja bem vindo de volta</Text>
-          <Input placeholder='E-mail'/>
-          <Input placeholder='Senha' type='password'/>
-          <Button text="Avançar" />
-          <Checkbox text="Lembrar-me" />
+          <Input placeholder='E-mail' accessibilityLabel='Digite o seu email'/>
+          <Input placeholder='Senha' type='password' accessibilityLabel='Digite a sua senha'/>
+          <Button text="Entrar" accessibilityLabel='Entrar' accessibilityHint='Faz login e abre tela inicial' />
+          <Checkbox text="Lembrar senha" accessibilityLabel='Lembrar senha' accessibilityHint='Lembra sua senha para a próxima vez que acessar o app'/>
         </View>
     )
 }
