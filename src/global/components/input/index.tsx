@@ -12,11 +12,10 @@ import colors from '../../styles/colors';
 export type InputProps = MaskInputProps & {
     placeholder: string;
     type?: string; 
-    accessibilityLabel?: string;
     accessibilityHint?: string;
 }
 
-const Input = ({placeholder, type, accessibilityHint, accessibilityLabel}:InputProps) => {
+const Input = ({placeholder, type, accessibilityHint}:InputProps) => {
       const [value, onChangeText] = useState('')
       const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
@@ -25,18 +24,18 @@ const Input = ({placeholder, type, accessibilityHint, accessibilityLabel}:InputP
                 <TouchableOpacity onPress={() => setIsPasswordVisible(!isPasswordVisible)} style={styles.button} accessibilityLabel={isPasswordVisible ? "Ocultar senha" : "Mostrar senha"} accessibilityRole="button" accessibilityHint="Alterna a visibilidade do campo de senha">
                     {isPasswordVisible ? (
                        
-                        <Visibility height={25} width={25} color={colors.text}/>
+                        <Visibility height={25} width={25} />
                     ):(
                        
-                        <VisibilityOff height={25} width={25} color={colors.text}/>
+                        <VisibilityOff height={25} width={25} />
                     )}
                 </TouchableOpacity>
             )
       },[isPasswordVisible]);
 
     return(
-        <View style={styles.input}>
-            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1}} accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint}/>
+        <View style={styles.input} accessibilityLabel={placeholder}>
+            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1}} accessibilityHint={accessibilityHint}/>
             {type === 'password' ? (
                 handleVisibilityToggle()
             ) : null}
