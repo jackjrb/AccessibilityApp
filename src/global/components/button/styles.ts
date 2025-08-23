@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import colors from "../../styles/colors";
+import { RFValue } from "react-native-responsive-fontsize";
 
 
 export const styles = StyleSheet.create({
@@ -12,7 +13,7 @@ export const styles = StyleSheet.create({
     alignItems:'center'
   },
   textButton:{
-    fontSize:14,
+    fontSize:RFValue(14),
     color:colors.text,
   }
 })

@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import colors from "../../global/styles/colors";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const styles = StyleSheet.create({
   container: {
@@ -10,7 +11,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal:16,
   },
   title:{
-    fontSize:24,
+    fontSize:RFValue(24),
     fontWeight:'bold',
     marginBottom:24,
     color:colors.title,
