@@ -11,7 +11,7 @@ const Login = () => {
 
     return(
         <View style={styles.container}>
-          <Image source={require('../../assets/login.png')} style={styles.image}/>
+          <Image source={require('../../assets/login2.png')} style={styles.image}/>
           <Text style={styles.title}>Seja bem vindo de volta</Text>
           <Input placeholder='E-mail'/>
           <Input placeholder='Senha' type='password' accessibilityHint="Digite sua senha. Você pode alternar a visibilidade do campo com o botão ao lado"/>

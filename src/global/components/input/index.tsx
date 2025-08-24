@@ -34,8 +34,8 @@ const Input = ({placeholder, type, accessibilityHint}:InputProps) => {
       },[isPasswordVisible]);
 
     return(
-        <View style={styles.input} accessibilityLabel={placeholder}>
-            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1}} accessibilityHint={accessibilityHint}/>
+        <View style={styles.input}>
+            <MaskInput placeholder={placeholder} onChangeText={onChangeText} value={value} secureTextEntry={!isPasswordVisible && type ==='password'} placeholderTextColor={colors.text} style={{flex:1, minHeight:48}} accessibilityHint={accessibilityHint}/>
             {type === 'password' ? (
                 handleVisibilityToggle()
             ) : null}
