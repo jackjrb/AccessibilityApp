@@ -8,7 +8,9 @@ O estudo contou com uma [pesquisa](https://forms.office.com/pages/responsepage.a
 ](https://www.notion.so/Manual-acessibilidade-para-desenvolvedores-utilizando-React-Native-21dd49d7aa2d80a9b9a9e7abab87bb62).
 
 O projeto possui 2 branchs
+
 Branch 1 - tela-sem-acessibilidade
+
 Branch 2 - main (Conta com os recursos de acessibilidade)
 
 ## Step 1: Start Metro
