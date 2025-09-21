@@ -1,6 +1,6 @@
 Projeto criado como prova de conceito do TCC de Jackeline Brito na especialização em Engenharia de Software na USP/ESALQ.
 
-O estudo contou com uma [pesquisa](https://forms.office.com/pages/responsepage.aspx?id=1orxjyM08EuJ05VjH42pJPqPLu2xkLZCgQoQpGkKs_FUQTVSRkJKSVVQNFI3VURBVTQ5UVI4N0hLRS4u&route=shorturl) para deficiêntes visuais.
+O estudo contou com um [questionário de pesquisa sobre acessibilidade](https://forms.office.com/pages/responsepage.aspx?id=1orxjyM08EuJ05VjH42pJPqPLu2xkLZCgQoQpGkKs_FUQTVSRkJKSVVQNFI3VURBVTQ5UVI4N0hLRS4u&route=shorturl) para deficiêntes visuais.
 
 # Getting Started
 
