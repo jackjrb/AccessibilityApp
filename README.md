@@ -5,7 +5,7 @@ O estudo contou com um [questionário de pesquisa sobre acessibilidade](https://
 # Getting Started
 
 > **Note**: A partir dos estudos feitos neste projeto foi criado um [Guia prático de desenvolvimento de acessibilidade em React Native
-](https://www.notion.so/Manual-acessibilidade-para-desenvolvedores-utilizando-React-Native-21dd49d7aa2d80a9b9a9e7abab87bb62).
+](https://www.notion.so/Manual-acessibilidade-para-desenvolvedores-utilizando-React-Native-21dd49d7aa2d80a9b9a9e7abab87bb62) beaseado na [WCAG](https://guia-wcag.com/).
 
 O projeto possui 2 branchs
 
